@@ -1,16 +1,10 @@
-# React + Vite
+# Infos importantes
+• Nous allons développer un site e-commerce en utilisant React et tailwindcss à partir du design du site e-commerce qu’on avait réalisé avec WordPress. L’objectif est de reprendre l’apparence générale du site existant (structure, pages et sections).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+• Pour l’alimentation en données, on va utiliser FakeStore API (pour les explications, cfr ChatGPT). Cette API fournit des produits complets (images, noms, prix, descriptions et catégories), nous n’allons donc plus ajouter des produits manuellement.
 
-Currently, two official plugins are available:
+• Toutes les pages sont dans le dossier src/Pages. Assurez vous que toutes vos pages sont responsives.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+• Avant de commencer le développement, forker le projet, le cloner en local et installer les dépendances nécessaires. Le travail doit impérativement se faire sur des branches dédiées (une branche par fonctionnalité ou page), sans jamais modifier directement la branche principale.
+Pour comprendre toutes ces étapes, utilisez ChatGPT
+Important : forker le projet avant tout.
