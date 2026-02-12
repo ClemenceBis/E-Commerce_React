@@ -1,15 +1,28 @@
 import { Link } from "react-router-dom";
+import { FiShoppingCart, FiUser, FiSearch } from "react-icons/fi";
+
 
 function Header() {
   return (
-    <nav className="flex gap-4 p-4 bg-gray-100">
-      <Link to="/home">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/products">Products</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/">Login</Link>
-      <Link to="/cart">Cart</Link>
-    </nav>
+    <div className="flex justify-around bg-gray-100 p-8">
+      <h1 className="text-3xl font-extrabold text-light">SHOP</h1>
+      <nav className="flex gap-10 text-lg">
+        <Link to="/home" className="hover:text-light">Home</Link>
+        <Link to="/products" className="hover:text-light">Products</Link>
+        <Link to="/about" className="hover:text-light">About</Link>
+        <Link to="/contact" className="hover:text-light">Contact</Link>
+      </nav>
+
+      <div className="flex align-end gap-10">
+        <Link to="/">
+          <FiUser className="cursor-pointer text-2xl hover:text-light" />
+        </Link>
+
+        <Link to="/cart">
+          <FiShoppingCart className="cursor-pointer text-2xl hover:text-light" />
+        </Link>
+      </div>
+    </div>
   );
 }
 
